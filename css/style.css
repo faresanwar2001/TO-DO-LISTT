@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  
+}
+body{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+}
+header{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+header h1{
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    color: white;
+}
+.input{
+    margin-top: 100px;
+    /* background-color: aqua; */
+}
+.input-value{
+    width: 60%;
+    margin: 0 auto;
+    transform: translateX(10%);
+
+}
+.input input{
+    outline: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10PX;
+    border-radius: 5PX;
+    border: none;
+    border: 1px solid #ccc;
+    box-shadow: #FBAB7E inset 0px;
+}
+.input input:focus{
+    
+    box-shadow: 1px 1px #ccc inset ;
+}
+#addTask{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #FBAB7E;
+    font-weight: 450;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.list{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+#taskList{
+   
+   color: white;
+   width: 30%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ 
+  
+  
+}
+#taskList li {
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+    background-color: #ad8e40;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#taskList #deleteInput{
+ margin-left:180px ;
+  text-align: end;
+  background-color: red;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: black;
+  cursor: pointer;
+  
+}
+#taskList #deleteInput i{
+font-size: 1.1rem;
+  
+}
+@media screen and (max-width: 1619px) {
+    .main-data-info img{
+        width: 400px;
+        height: 300px;
+    }
+    .main-data-txt h1{
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 77px;
+     }
+    
+}
+@media screen and (max-width: 768px) {
+    .input-value{
+        width: 80%;
+        margin: 0 auto;
+        transform: translateX(-9PX);
+    }
+    .input input{
+        width: 100%;
+        margin-bottom: 10px;
+        
+    }
+    #addTask{
+        text-align: center;
+        width: 100%;
+        
+    }
+    #taskList{
+        width: 100%;
+        padding: 0 12px;
+    }
+    
+}
